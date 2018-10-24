@@ -1,4 +1,5 @@
 laconfig = require("./laconfig.json");
+const token = proces.env.token;
 const Discord = require("discord.js");
 const robot = new Discord.Client();
 
