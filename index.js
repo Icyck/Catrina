@@ -21,10 +21,8 @@ robot.on("ready", () => {
     let messageArray = message.contest.split(" ");
     let cmd = messageArray[0]
     let args = messageArray.slice(1);
-  });
-  
-
- robot.on("guildMemberAdd", async member => {
+      
+       robot.on("guildMemberAdd", async member => {
     console.log(`${member.id} joined the server.`);
 
     let welcomechannel = member.guild.channels.find(`name`, "welcome_leaves");
@@ -37,6 +35,10 @@ robot.on("ready", () => {
  if(cmd === `${prefix}ping`){
      message.reply("Pong")
     }
+  });
+  
+
+
  
 
 robot.login(laconfig.token);
