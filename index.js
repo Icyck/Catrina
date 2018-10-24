@@ -33,6 +33,9 @@ robot.on("ready", () => {
 
   });
 
+ if(cmd === `${prefix}ping`){
+     message.reply("Pong")
+    }
  
 
 robot.login(laconfig.token);
