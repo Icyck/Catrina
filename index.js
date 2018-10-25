@@ -30,27 +30,7 @@ robot.on("ready", () => {
   
   
     });
-    if(cmd === `${prefix}verify`){
-      if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.reply("Sorry pal, you can't do that.");
-      let pMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
-      if(!pMember) return message.reply("Couldn't find that user, yo.");
-     
-      let gRole = message.guild.roles.find(`name`, 'verifed')
-      
-  
-      if(pMember.roles.has(gRole.id))(" Have already role!");
-      await(pMember.addRole(gRole.id));
-  
-      try{
-      await    pMember.send(`You verify account`);
-      }catch(e){
-      message.channel.send(`***You verify account***`);
-      }
-    }
-
-    if(cmd === `${prefix}test`){
-      message.reply("Test here!!")
-    }
+   
   });
   
 
