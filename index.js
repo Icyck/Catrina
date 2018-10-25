@@ -36,7 +36,7 @@ robot.on("ready", () => {
       let welcomechannel = member.guild.channels.find(`name`, "welcome_leaves");
       
       welcomechannel.send(`Hello ${member} welcome to Night Support! Read "<#495869652522500096>" and "<#499934754523840512>". Write in "<#495869103534243840>" ***-verify***. Good bye!`);
-
+   });
  
 
 robot.login(laconfig.token);
