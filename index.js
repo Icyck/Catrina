@@ -1,5 +1,6 @@
 laconfig = require("./laconfig.json");
 const Discord = require("discord.js");
+const token = proces.env.token;
 const robot = new Discord.Client();
 
 robot.on("ready", () => {
@@ -39,4 +40,4 @@ robot.on("ready", () => {
    });
  
 
-robot.login(laconfig.token);
+robot.login(token);
