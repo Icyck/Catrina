@@ -47,6 +47,10 @@ robot.on("ready", () => {
       message.channel.send(`***You verify account***`);
       }
     }
+
+    if(cmd === `${prefix}test`){
+      message.reply("Test here!!")
+    }
   });
   
 
